@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+.font-family-karla {
+    font-family: karla;
+}
+
+/* CSS to initially hide the box */
+.password-match-box {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-top: 5px;
+}
+#text1{
+    margin-top: 50px;
+}
+
+
+#logo{
+    background:balack;
+}
+#let{
+    color: white;
+}

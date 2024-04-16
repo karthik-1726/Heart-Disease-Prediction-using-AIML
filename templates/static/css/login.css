@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
+
+#login-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-btn:hover {
+background-color: #0056b3;
+}
+
+.container1{
+height: 1px;
+margin-right: 50%;
+
+}
+.alert{
+height: 1px;
+}
+.text-lg1{
+margin-top: 10px;
+}
+
+.alert.alert-success {
+color: green;
+}
+
+.alert.alert-error {
+color: red;
+}

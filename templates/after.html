@@ -1,0 +1,93 @@
+<!--
+<html>
+<head>
+	<style>
+		#submit{  
+    width: 200px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: #f44336;
+  
+}  
+	</style>
+</head>
+<body bgcolor="lightgrey">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<center>
+	
+	<h1>Heart  = {{data}}</h1>
+	<a href="/">GO BACK TO HOME PAGE</a>
+</center>
+</body>
+</html>
+-->
+
+
+<html>
+<head>
+    <!--<title> predicting weight</title>-->
+<link rel="stylesheet" href="static/css/after.css">
+</head>
+<body bgcolor="lightgrey">
+    <!--<div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+    <center>
+        {% if data == 0 %}
+            <div class="row">
+                <div class="col-md-6 border-right"><img class="gif" src="https://media.tenor.com/images/eb53c2a525f26f2504c7e7ba27c2470b/tenor.gif" alt="not suffering Image"></div> 
+                <div class="col-md-6 ">
+                    <div class="d-flex h-100">
+                        <div class="row justify-content-center align-self-center">
+                            <h2 class="p-2">Hurrah !!!! You have <span class="text-success font-weight-bold">very less chances of getting heart disease</span>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% elif data == 1 %}
+            <div class="row">
+                <div class="col-md-6 border-right"><img class="gif1" src="https://media.tenor.com/images/941b7c7ddbe833e186af7704e26aa3df/tenor.gif" alt="suffering Image" height="200px" width="200px"></div>
+                <div class="col-md-6 ">
+                    <div class="d-flex h-100">
+                        <div class="row justify-content-center align-self-center">
+                            <h2 class="p-2 ">Unfortunately, you have <span class="text-danger font-weight-bold"> high risk of getting heart disease</span>. Please contact your doctor immediately.<br />
+                            </h2>
+                            <b><h2 style="color: rgba(13, 25, 136, 0.87);text-decoration: underline;">Suggestive Measures</h2></b>
+                            <h3><ul>
+                              <li>Maintain a Healthy Diet</li>
+                              <li>Engage in Regular Exercise</li>
+                              <li>Maintain a Healthy Weight</li>
+                              <li>Quit Smoking</li>
+                              <li>Limit Alcohol Consumption</li>
+                              <li>Manage Stress</li>
+                              <li>Regular Health Check-ups</li>
+                              <li>Stay Hydrated</li>
+                              <li>Limit Processed Foods</li>
+                              </ul>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        {% endif %}
+        <!--<h1>Heart Risk = {{data}}</h1>-->
+        <h2><a href="/">GO BACK TO HOME PAGE</a></h2>
+    </center>
+</body>
+</html>
